@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Webpage</title>
+    <style type="text/css">
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&family=PT+Serif&family=Roboto&display=swap');
+
+/*+++++Color Palette Here+++++++++++++*
+
+*** Primary color:
+
+   shade 0 = #954276 = rgb(149, 66,118) = rgba(149, 66,118,1) = rgb0(0.584,0.259,0.463)
+   shade 1 = #D3A0C0 = rgb(211,160,192) = rgba(211,160,192,1) = rgb0(0.827,0.627,0.753)
+   shade 2 = #B56E9B = rgb(181,110,155) = rgba(181,110,155,1) = rgb0(0.71,0.431,0.608)
+   shade 3 = #792459 = rgb(121, 36, 89) = rgba(121, 36, 89,1) = rgb0(0.475,0.141,0.349)
+   shade 4 = #560B3A = rgb( 86, 11, 58) = rgba( 86, 11, 58,1) = rgb0(0.337,0.043,0.227)
+
+*** Secondary color (1):
+
+   shade 0 = #7BAC4C = rgb(123,172, 76) = rgba(123,172, 76,1) = rgb0(0.482,0.675,0.298)
+   shade 1 = #CDEAB2 = rgb(205,234,178) = rgba(205,234,178,1) = rgb0(0.804,0.918,0.698)
+   shade 2 = #A7D17E = rgb(167,209,126) = rgba(167,209,126,1) = rgb0(0.655,0.82,0.494)
+   shade 3 = #598B2A = rgb( 89,139, 42) = rgba( 89,139, 42,1) = rgb0(0.349,0.545,0.165)
+   shade 4 = #37630C = rgb( 55, 99, 12) = rgba( 55, 99, 12,1) = rgb0(0.216,0.388,0.047)
+
+*** Secondary color (2):
+
+   shade 0 = #AEBB53 = rgb(174,187, 83) = rgba(174,187, 83,1) = rgb0(0.682,0.733,0.325)
+   shade 1 = #F3FABE = rgb(243,250,190) = rgba(243,250,190,1) = rgb0(0.953,0.98,0.745)
+   shade 2 = #D8E389 = rgb(216,227,137) = rgba(216,227,137,1) = rgb0(0.847,0.89,0.537)
+   shade 3 = #8B972D = rgb(139,151, 45) = rgba(139,151, 45,1) = rgb0(0.545,0.592,0.176)
+   shade 4 = #616C0E = rgb( 97,108, 14) = rgba( 97,108, 14,1) = rgb0(0.38,0.424,0.055)
+   
+   
+   
+   
+   
+   
+   /
+/*++++White Space Style Sheet Here++++*/
+
+        body{
+            background-color: #792459;
+        }
+        header{
+            background-color: #B56E9B;
+            padding: 3%;
+        }
+        #wrapper{
+            background-color: #D3A0C0;
+            width: 85%;
+            margin: 0 auto;
+        }
+        
+        nav{
+            padding: 1% 0;
+            margin: 0 auto;
+            background-color: #B56E9B;
+        }
+        nav ul{
+            width: 84%;
+           
+            margin: 0 auto;
+        }
+        nav ul li{
+            display: inline;
+            margin-right: 2%;
+        }
+        li.nav-item a:hover{
+            background-color:#AEBB53
+            
+        }
+        li.nav-item a:active{
+            background-color: #CDEAB2 ;
+        }
+        #feature{
+            width: 84%;
+            margin: 3% auto 4% auto;
+            padding: 1.5% 2.25%;
+            background-color: #B56E9B;
+            overflow: hidden;
+        }
+        .feature-img{
+            float: left;
+            width: 42%;
+            
+        }
+        .feature-text{
+            float: left;
+            width: 40%;
+            margin: 10px;
+            font-family: 'Josefin Slab', serif;
+        }
+        #main-content{
+            width: 59.3939393939394%; /*523/825*/
+            margin: 2%;
+            float: left;
+        }
+        .mainefigure{
+            background-color: #AEBB53 ;
+           
+            margin-right:09.5602294455067%;
+            width: 50%;
+            float: right;
+        }
+        #main-content figure p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #main-content figure img{
+            width: 100%;
+        }
+        #sidebar{
+            width: 28.6060606060606%; /*302/825*/
+            float: left;
+            margin: 2%;
+           
+            padding: 2%;
+        }
+        .sidebar-img{
+            max-width: 100%;
+        }
+        .sidefigure{
+            width: 88.0794701986755%;
+            margin: 0 auto;
+            background-color: #AEBB53 ;
+        }
+        #sidebar h2{
+            text-align: center;
+            font-size: medium;
+        }
+        #sidebar figure figcaption{
+            text-align: center;
+           
+        }
+        footer{
+            clear: left;
+        }
+        img{
+            max-width: auto;
+            max-height: auto;
+        }
+        footer{
+            text-align: center;
+        }
+        /*type styles*/
+        /*Font styles
+            PT Serif
+            Roboto
+            Josefin Slab
+            */
+        
+
+       #feature h2{
+        margin-bottom: 2%;
+       }
+      h1, h2{
+        font-family: Josephin-slab, sans-serif;
+        color: black;
+        margin: 2% 0;
+      }
+      h1{
+        font-size: 2em;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 1.75em;
+        font-weight: bold;
+      }
+     
+       p{
+        margin: 2.5% 0;
+       }
+
+
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <header>
+        <h1>Harlequin</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="Home.html">Home</a></li>
+            <li class="nav-item"><a href="Woodduck.html">Wood Duck</a></li>
+            <li class="nav-item"><a href="Bluewingedteal.html">Blue Winged Teal</a></li>
+            <li class="nav-item"><a href="Mallard.html">Mallard</a></li>
+            <li class="nav-item"><a href="Gadwall.html">Gadwall</a></li>
+        </ul>
+    </nav>
+
+    <div id="feature">
+        <h2>Harlequin</h2>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.coniferousforest.com%2Fwp-content%2Fuploads%2F2019%2F01%2FHarlequin-Duck-Image.jpg&f=1&nofb=1&ipt=b5b02f62f8746b73376fbaad72e319e0814b5f64a97e3a7db9847145681c9039&ipo=images" class="feature-img"/>
+        
+        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.</p>
+    </div>
+
+    <div id="main-content">
+        <article>
+            <h2>Harlequin Biology</h2>
+                <figure class="mainefigure">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Futahbirds.org%2Fbirdsofutah%2FBirdsD-K_2%2FHarlequinDuckPH3.jpg&f=1&nofb=1&ipt=f5e25497089e280b86ffd68fce62da87282469b8cc7a69635dee32238a18b748&ipo=images">
+                    <figcaption>
+                        <p>Wood Ducks display plumage dimorphism</p>
+                    </figcaption>
+                </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+
+        </article>
+        <article>
+            <h2>More About Harlequin Ducks</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+
+        </article>
+        <article>
+            <h2>Even More About Harlequin Ducks</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+
+        </article>
+    </div>
+
+    <div id="sidebar">
+        <article>
+            <h2>Harlequin Behavior</h2>
+            <figure class="sidefigure">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwaterfowlerschallenge.com%2Fwp-content%2Fuploads%2F2021%2F08%2FHarlequin-Duck-Gallery-03-600x450.jpg&f=1&nofb=1&ipt=b38f265cb3fc3140b379510a5191371e1c266af6b2e7d0f12f63bf7102bbfc78&ipo=images" class="sidebar-img">
+                <figcaption>
+                    <p>Cute Ducks</p>
+                </figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus ipsum, sit amet lacinia risus auctor sed. Cras pulvinar justo vel sapien ultricies, non dictum urna dignissim. Aenean facilisis luctus urna nec elementum. Aenean et erat pretium nulla porttitor viverra. Etiam dignissim at sem placerat tincidunt. Proin dignissim sapien sed luctus tincidunt. Duis eget purus mauris. In nunc justo, pharetra in tempus a, feugiat eget nibh. In at nibh tempor, pellentesque lorem nec, euismod neque. Morbi in fringilla diam, ut pharetra lorem. Sed diam enim, euismod in nulla et, venenatis egestas dui. Sed diam risus, porta et mi ac, dictum gravida lectus.
+
+            </p>
+
+        </article>
+    </div>
+
+    <footer>
+        <p><small>Stars Da'Vine 2024</small></p>
+    </footer>
+
+
+</div>
+</body>
+
+</html>
